@@ -39,3 +39,32 @@ import tkinter as tk
 #   
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+window = tk.Tk()
+
+frm_1 = tk.Frame()
+frm_1.pack()
+
+label_1 = tk.Label(master = frm_1, text = "Frame 1")
+label_1.pack()
+
+button_1 = tk.Button(window, text = "Click!")
+button_1.pack()
+
+entry_1 = tk.Entry(window)
+entry_1.pack()
+
+entry_1.insert(0, "What's your name?")
+
+frm_2 = tk.Frame()
+frm_2.pack()
+
+label_2 = tk.Label(master = frm_2, text = "Frame 2")
+label_2.pack()
+
+text_box = tk.Text()
+text_box.pack()
+
+text_box.insert("1.0", "What is your date of birth?")
+text_box.insert("2.0", "\nWhere do you live?")
+
+window.mainloop()
